@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { dashboardRoute } from './dashboard.routing';
 import { DashboardComponent } from './dashboard.component';
+import { WelcomeInfoComponent } from './welcome-info/welcome-info.component';
 
 
 
@@ -12,7 +13,8 @@ import { DashboardComponent } from './dashboard.component';
     RouterModule.forChild(dashboardRoute)
   ],
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    WelcomeInfoComponent
   ]
 })
 export class DashboardModule { }

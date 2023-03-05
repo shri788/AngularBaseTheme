@@ -12,7 +12,7 @@ export const routes: Routes = [
                 pathMatch: 'full'
             },
             {
-                path: 'dashboard',
+                path: '',
                 loadChildren: 
                 () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
             }

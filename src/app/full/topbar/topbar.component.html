@@ -5,7 +5,7 @@
   
   <span *ngIf="headingList.length > 0 && menuList.length > 0 && isMenusFound">
     <app-menu *ngFor="let menu of headingList; let i = index;" [heading]="headingList[i].name"
-    [menus]="menuList" [headingIcon]="headingList[i].icon"></app-menu>
+    [menus]="menuList[i]" [headingIcon]="headingList[i].icon"></app-menu>
   </span>
 
   <img [src]="logoImg" class="avatarImg" 

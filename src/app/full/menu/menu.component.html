@@ -1,9 +1,13 @@
 <div class="dropdown">
     <button mat-button class="dropbtn"><mat-icon>{{headingIcon}}</mat-icon> {{heading}}</button>
     <div class="dropdown-content">
-        <button mat-button *ngFor="let mm of menus[0]">
-            <mat-icon>{{mm.icon}}</mat-icon>
-            {{mm.name}}
-        </button>
+        <a mat-button *ngFor="let mm of menus"
+        [routerLink]="mm.route">
+            <div class="dropdown-btn">
+                <!-- <mat-icon>{{mm.icon}}</mat-icon> -->
+                <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                {{mm.name}}<br>
+            </div>
+        </a>
     </div>
   </div>
